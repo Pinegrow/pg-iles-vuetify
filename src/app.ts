@@ -16,12 +16,10 @@ import 'prismjs/themes/prism-tomorrow.css'
 
 import { headConfig } from '@/plugins/head'
 import pinia from '@/plugins/pinia'
-import vuetify from '@/plugins/vuetify'
 
 export default defineApp({
   enhanceApp({ app }) {
     app.use(pinia)
-    app.use(vuetify)
   },
   head({ frontmatter, site }) {
     return headConfig({ frontmatter, site })
