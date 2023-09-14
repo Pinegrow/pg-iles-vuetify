@@ -1,9 +1,9 @@
 // import {createHead} from '@vueuse/head'
 
-// import checkDarkTheme from '@/composables/dark-color-scheme-check?raw'
+import checkDarkTheme from '@/composables/dark-color-scheme-check?raw'
 
-// import type { Script } from '@unhead/schema'
-// type TurboScript = Script & { once: true }
+import type { Script } from '@unhead/schema'
+type TurboScript = Script & { once: true }
 
 const fonts =
   'https://fonts.googleapis.com/css?family=DM+Sans:400,500,700|Inter:100,200,300,400,500,600,700,800,900&display=swap'
@@ -24,7 +24,7 @@ export const headConfig = ({ frontmatter, site }) => {
       { property: 'author', content: site.author },
       { property: 'keywords', content: computed(() => frontmatter.tags) },
     ],
-    // script: [{ children: checkDarkTheme, once: true } as TurboScript],
+    script: [{ innerHTML: checkDarkTheme, once: true } as TurboScript],
     link: [
       { rel: 'dns-prefetch', href: googleapis },
       { rel: 'dns-prefetch', href: gstatic },
