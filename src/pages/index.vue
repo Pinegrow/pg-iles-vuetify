@@ -2,8 +2,6 @@
     title: Home
 </page>
 <template>
-  <main>
-    <SampleCard client:load />
-  </main>
+  <main>A Fresh Start!</main>
 </template>
 <style scoped></style>
