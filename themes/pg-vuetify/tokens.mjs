@@ -116,12 +116,12 @@ const pg_colors = {
 }
 
 const pg_fonts = {
-  sans: ['"Lucida Sans Unicode", "Lucida Grande", sans-serif'],
-  serif: ["'Fira Sans', sans-serif"],
+  sans: ["'DM Sans', sans-serif"],
+  serif: ["'Inter', sans-serif"],
 }
 
 const pg_font_urls = [
-  'https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900&display=swap',
+  'https://fonts.googleapis.com/css?family=DM+Sans:400,500,700|Inter:100,200,300,400,500,600,700,800,900&display=swap',
 ]
 
 const pg_backgrounds = {

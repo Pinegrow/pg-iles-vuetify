@@ -12,7 +12,7 @@
                 <dmcolor key="info" color="#0288d1" shade-50="#ebf1f9" shade-100="#d0dff2" shade-200="#b4ccec" shade-300="#96bbe5" shade-400="#76a9df" shade-500="#5098d8" shade-600="#0288d1" shade-700="#027cbf" shade-800="#0271ae" shade-900="#02669d" shade-950="#015b8c" shade-DEFAULT="#5098d8"/>
                 <dmcolor key="neutral" color="#121212" shade-50="#ebebeb" shade-100="#c2c2c2" shade-200="#9b9b9b" shade-300="#757575" shade-400="#525252" shade-500="#303030" shade-600="#121212" shade-700="#111111" shade-800="#0f0f0f" shade-900="#0e0e0e" shade-950="#0c0c0c" shade-DEFAULT="#0b0b0b"/>
             </dmdesignskill>
-            <dmdesignskill skill="fonts" family_1="&quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif" family_2="Fira Sans"></dmdesignskill>
+            <dmdesignskill skill="fonts" family_1="DM Sans" family_2="Inter" family_3="" name_3=""></dmdesignskill>
             <dmdesignskill skill="background" image_for_colors advanced="true" filter_blur="0" filter_brightness="100" filter_contrast="100" filter_grayscale="0" filter_hue-rotate="0" filter_invert="0" filter_opacity="100" filter_saturate="100" filter_sepia="0" image="https://images.unsplash.com/photo-1682685797736-dabb341dc7de?ixid=M3wyMDkyMnwxfDF8c2VhcmNofDF8fHdhbGxwYXBlcnxlbnwwfHx8fDE2OTQ4NzMwMTB8MA&ixlib=rb-4.0.3q=85&fm=jpg&crop=faces&cs=srgb&w=1200&fit=max" keyword></dmdesignskill>
         </dmdesign>
     </dmdesigns>
