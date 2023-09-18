@@ -22,6 +22,6 @@
     "allowJs": true,
     "strict": false
   },
-  "include": ["themes/**/*", "vuetify.config.ts"],
+  "include": ["themes/**/*", "vuetify.config.ts", "src/**/*"],
   "exclude": ["**/node_modules/**", "**/dist/**"]
 }
