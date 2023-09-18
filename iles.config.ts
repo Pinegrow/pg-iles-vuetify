@@ -7,7 +7,7 @@ import presetIcons from '@unocss/preset-icons'
 import type { LiveDesignerOptions } from '@pinegrow/vite-plugin'
 import AutoImportAPIs from 'unplugin-auto-import/vite'
 // import myIlesModule from './src/modules/my-module'
-import Vuetify from 'vite-plugin-vuetify'
+import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 export default defineConfig({
   siteUrl: 'https://pg-iles-vuetify.netlify.app',
@@ -27,8 +27,8 @@ export default defineConfig({
           vuetify: {
             /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
             configPath: 'vuetify.config.ts', // or file where vuetify is created
-            // cssPath: '@/assets/css/main.css',
             // utilities: false,
+            // restartOnConfigUpdate: true,
             restartOnThemeUpdate: true,
           },
           // plugins: [
@@ -91,6 +91,11 @@ export default defineConfig({
   // extendRoutes (routes) {
   //   //...
   // },
+  vue: {
+    // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#image-loading
+    template: { transformAssetUrls },
+  },
+
   vite: {
     plugins: [
       // For details, refer to https://github.com/antfu/unplugin-auto-import#configuration
