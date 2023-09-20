@@ -16,6 +16,7 @@ import 'prismjs/themes/prism-tomorrow.css'
 
 import { headConfig } from '@/plugins/head'
 import pinia from '@/plugins/pinia'
+import '@/plugins/youtube.client'
 
 export default defineApp({
   enhanceApp({ app }) {

@@ -2,6 +2,8 @@
     title: Home
 </page>
 <template>
-  <main><span>A Fresh Start!</span></main>
+  <main>
+    <HomePage client:load />
+  </main>
 </template>
 <style scoped></style>
