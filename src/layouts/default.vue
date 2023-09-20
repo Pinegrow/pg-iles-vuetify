@@ -2,7 +2,7 @@
   <div>
     <MetaTags client:load />
     <div class="d-flex flex-column bg-background text-on-background">
-      <!-- <NavBar class="position-fixed bg-background shadow" style="z-index: 10;" /> -->
+      <!-- <NavBar class="position-fixed bg-background shadow" style="z-index: 20;" /> -->
       <!-- <div class="mt-24 shadow"> -->
       <slot />
       <!-- </div> -->

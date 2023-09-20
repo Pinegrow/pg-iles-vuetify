@@ -21,8 +21,11 @@
   <v-card width="360" class="elevation-4 mt-12 mx-auto">
     <v-img :src="heroImageSrc" height="250" cover></v-img>
     <v-card-item>
-      <template #title
-        ><span class="text-primary">Cafe Bella Vista</span>
+      <template #title>
+        <div class="d-flex justify-space-between">
+          <span class="text-primary">Cafe Bella Vista</span>
+          <DarkModeSwitch />
+        </div>
       </template>
       <template #subtitle
         ><span>Local Favourite</span>
