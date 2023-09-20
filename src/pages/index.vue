@@ -3,7 +3,7 @@
 </page>
 <template>
   <main>
-    <SampleCard client:load />
+    <HomePage client:load />
   </main>
 </template>
 <style scoped></style>
