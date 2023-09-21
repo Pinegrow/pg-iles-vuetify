@@ -7,9 +7,12 @@
 
   import { getCurrentInstance } from 'vue'
   import vuetify from '@/plugins/vuetify'
-  import { useHero } from '@/composables/hero'
 
-  const { heroImageSrc } = useHero()
+  import { pg_background_urls } from '~~/themes/pg-vuetify/tokens.mjs'
+
+  const heroImageSrc =
+    pg_background_urls['design-image-large'] ||
+    pg_background_urls['design-image']
 
   const app = getCurrentInstance().appContext.app
   app.use(vuetify)
