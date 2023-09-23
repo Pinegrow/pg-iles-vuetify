@@ -8,9 +8,11 @@ import type { LiveDesignerOptions } from '@pinegrow/vite-plugin'
 import AutoImportAPIs from 'unplugin-auto-import/vite'
 // import myIlesModule from './src/modules/my-module'
 import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+import site from './src/site'
+const { url: siteUrl } = site
 
 export default defineConfig({
-  siteUrl: 'https://pg-iles-vuetify.netlify.app',
+  siteUrl,
   // turbo: true,
   jsx: 'preact', // 'solid', 'react', 'vue'
   svelte: true,
