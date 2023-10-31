@@ -165,6 +165,7 @@ export default defineConfig({
         ],
       }),
       {
+        name: 'vuetify-plugin',
         configResolved(config) {
           const idx_vue = config.plugins.findIndex(
             (plugin) => plugin.name && plugin.name === 'vite:vue',
