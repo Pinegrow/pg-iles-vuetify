@@ -2,8 +2,8 @@
     title: Home
 </page>
 <template>
-  <main>
+  <div>
     <HomePage client:load />
-  </main>
+  </div>
 </template>
 <style scoped></style>
