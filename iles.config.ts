@@ -101,8 +101,8 @@ export default defineConfig({
   // },
 
   vue: {
-    // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#image-loading
     template: {
+      // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#image-loading
       transformAssetUrls: {
         ...transformAssetUrls,
         'v-carousel-item': [
