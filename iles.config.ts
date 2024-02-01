@@ -8,6 +8,8 @@ import presetIcons from '@unocss/preset-icons'
 // import VueDevTools from 'vite-plugin-vue-devtools'
 // import myIlesModule from './src/modules/my-module'
 
+// import { visualizer } from 'rollup-plugin-visualizer'
+
 import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 import site from './src/site'
@@ -194,6 +196,14 @@ export default defineConfig({
     ssr: {
       noExternal: ['vuetify'],
     },
+
+    // build: {
+    //   // Vite uses Rollup under the hold, so rollup options & plugins can be used for advanced usage
+    //   rollupOptions: {
+    //     plugins: [visualizer()],
+    //   },
+    // },
+
     resolve: {
       alias: {
         /* Must be either an object, or an array of { find, replacement, customResolver } pairs. */
