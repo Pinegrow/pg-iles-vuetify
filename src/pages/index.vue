@@ -3,7 +3,7 @@
 </page>
 <template>
   <div>
-    <HomePage client:load />
+    <IslandHomePage client:load />
   </div>
 </template>
 <style scoped></style>
