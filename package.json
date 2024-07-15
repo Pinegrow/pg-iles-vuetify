@@ -60,7 +60,7 @@
     "typescript": "^5.0",
     "unocss": "^0.57.2",
     "unplugin-auto-import": "^0.16.6",
-    "vite-plugin-vue-devtools": "^0.0.22",
+    "vite-plugin-vue-devtools": "^7.3.6",
     "vite-plugin-vuetify": "^1.0.2",
     "vue-tsc": "^1.2"
   },
