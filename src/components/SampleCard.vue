@@ -21,7 +21,7 @@
       <template #title>
         <div class="d-flex justify-space-between">
           <span class="text-primary">Cafe Bella Vista</span>
-          <IslandDarkModeSwitch />
+          <DarkModeSwitch />
         </div>
       </template>
       <template #subtitle>
@@ -59,7 +59,7 @@
       <template #title>
         <span>Tonight's availability</span>
       </template>
-      <v-chip-group v-model="selectedTimeSlot" class="mt-2">
+      <v-chip-group v-model="selectedTimeSlot" class="mt-2" mandatory>
         <v-chip
           v-for="(timeSlot, index) in availableTimeSlots"
           :key="index"

@@ -50,6 +50,28 @@ export default defineConfig({
         } as LiveDesignerOptions,
       },
     ],
+    {
+      name: 'vuetify-module',
+      configResolved(config) {
+        config.vitePlugins.push(
+          Vuetify({
+            /* If customizing sass variables of vuetify components */
+            styles: {
+              configFile: 'src/assets/vuetify/settings.scss',
+            },
+            // ...
+          }),
+        )
+
+        // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#image-loading
+        //@ts-ignore
+        config.vue.template.transformAssetUrls = {
+          //@ts-ignore
+          ...(config.vue.template.transformAssetUrls || {}),
+          ...transformAssetUrls,
+        }
+      },
+    },
     //...
   ],
 
@@ -103,27 +125,10 @@ export default defineConfig({
   // },
 
   vue: {
+    reactivityTransform: false,
     template: {
       // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#image-loading
-      transformAssetUrls: {
-        ...transformAssetUrls,
-        'v-carousel-item': [
-          'src',
-          'lazySrc',
-          'srcset',
-          ':src',
-          ':lazySrc',
-          ':srcset',
-        ],
-        'v-card': [
-          'image',
-          'prependAvatar',
-          'appendAvatar',
-          ':image',
-          ':prependAvatar',
-          ':appendAvatar',
-        ],
-      },
+      transformAssetUrls,
       compilerOptions: {
         isCustomElement: (tag) => tag === 'lite-youtube',
       },
@@ -171,26 +176,6 @@ export default defineConfig({
           },
         },
       }),
-      {
-        name: 'vuetify-plugin',
-        configResolved(config) {
-          const idx_vue = config.plugins.findIndex(
-            (plugin) => plugin.name && plugin.name === 'vite:vue',
-          )
-          //@ts-ignore
-          config.plugins.splice(
-            idx_vue + 1,
-            0,
-            Vuetify({
-              /* If customizing sass variables of vuetify components */
-              // styles: {
-              //   configFile: 'src/assets/vuetify/settings.scss',
-              // },
-              //...
-            })[0],
-          )
-        },
-      },
       VueDevTools(),
     ],
     ssr: {
@@ -212,6 +197,14 @@ export default defineConfig({
         '@': fileURLToPath(new URL('./src', import.meta.url)),
         '~': fileURLToPath(new URL('./src', import.meta.url)),
         '~~': fileURLToPath(new URL('./', import.meta.url)),
+      },
+    },
+
+    css: {
+      preprocessorOptions: {
+        sass: {
+          api: 'modern-compiler',
+        },
       },
     },
   },
