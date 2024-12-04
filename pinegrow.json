@@ -1,0 +1,84 @@
+{
+  "files": {
+    "src/pages/index.vue": {
+      "frameworks": [
+        "@vue/devtools",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "vite-plugin-vue-devtools",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "project",
+        "pg.code-validator",
+        "@unocss/preset-icons",
+        "pg.project.items",
+        "pg.asset.manager",
+        "app_designer",
+        "@islands/pages",
+        "vue",
+        "iles",
+        "@pinegrow/iles-module",
+        "unplugin-vue-components",
+        "unplugin-auto-import",
+        "tw.flowbite",
+        "vuetify",
+        "pg.html"
+      ]
+    },
+    "src/layouts/default.vue": {
+      "frameworks": [
+        "@vue/devtools",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "vite-plugin-vue-devtools",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "@unocss/preset-icons",
+        "project",
+        "pg.code-validator",
+        "pg.project.items",
+        "@islands/pages",
+        "pg.asset.manager",
+        "app_designer",
+        "vue",
+        "unplugin-auto-import",
+        "iles",
+        "@pinegrow/iles-module",
+        "unplugin-vue-components",
+        "tw.flowbite",
+        "vuetify",
+        "pg.html"
+      ]
+    }
+  },
+  "template_framework_id": "vue",
+  "open-pages": ["src/pages/index.vue", "src/layouts/default.vue"],
+  "breakpoints": ["600px", "960px", "1280px", "1920px", "2560px"],
+  "frameworks": [
+    "@vue/devtools",
+    "pg.insight.events",
+    "pg.vue.tree.painter",
+    "vite-plugin-vue-devtools",
+    "pg.css.grid",
+    "pg.image.overlay",
+    "@unocss/preset-icons",
+    "project",
+    "pg.code-validator",
+    "pg.project.items",
+    "@islands/pages",
+    "pg.asset.manager",
+    "app_designer",
+    "vue",
+    "unplugin-auto-import",
+    "iles",
+    "@pinegrow/iles-module",
+    "unplugin-vue-components",
+    "tw.flowbite",
+    "vuetify",
+    "pg.html"
+  ],
+  "urls": {
+    "src/pages/index.vue": { "open-page-views": [{ "w": 1024, "h": 0 }] },
+    "src/layouts/default.vue": { "open-page-views": [{ "w": 1024, "h": 0 }] }
+  }
+}
