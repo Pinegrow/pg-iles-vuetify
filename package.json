@@ -39,6 +39,7 @@
     "@preact/preset-vite": "^2.9.0",
     "@sveltejs/vite-plugin-svelte": "^3.1.2",
     "@types/node": "^22.5.4",
+    "@unhead/schema-org": "^1.11.15",
     "@unocss/preset-icons": "^0.62.3",
     "@vue/devtools": "^6.6.3",
     "autoprefixer": "^10.4.20",
