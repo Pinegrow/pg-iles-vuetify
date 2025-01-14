@@ -6,7 +6,7 @@ import AutoImportAPIs from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
 import VueDevTools from 'vite-plugin-vue-devtools'
-import { unheadComposablesImports } from 'unhead'
+import { unheadVueComposablesImports } from '@unhead/vue'
 
 // import myIlesModule from './src/modules/my-module'
 
@@ -31,7 +31,6 @@ export default defineConfig({
       {
         liveDesigner: {
           iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
-          devtoolsKey: 'devtoolsKey', // see app.ts
           vuetify: {
             /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
             configPath: 'vuetify.config.ts', // or file where vuetify is created
@@ -152,7 +151,7 @@ export default defineConfig({
           // 'vue-router',
           // 'vue-i18n',
           // 'vue/macros',
-          unheadComposablesImports[0],
+          unheadVueComposablesImports,
           '@vueuse/core',
           'pinia',
         ],
@@ -180,6 +179,7 @@ export default defineConfig({
       }),
       VueDevTools(),
     ],
+
     ssr: {
       noExternal: ['vuetify'],
     },

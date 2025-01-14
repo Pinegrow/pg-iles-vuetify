@@ -14,55 +14,61 @@
     "build": "iles build",
     "preview": "iles preview --open --port 5050",
     "typecheck": "vue-tsc --noEmit",
-    "vue-devtools": "vue-devtools",
     "lint": "npm run lint:fix && npm run format",
-    "lint:fix": "eslint --fix --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts ./ --ignore-path .gitignore",
-    "format": "prettier --write \"**/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts,html,css,md,mdx,json}\" !public --ignore-path .gitignore"
+    "lint:fix": "eslint --fix ./",
+    "format": "prettier --write \"**/*.{html,vue,svelte,astro,js,jsx,cjs,mjs,ts,tsx,cts,mts,css,md,mdx,json}\" !public --ignore-path .gitignore"
   },
   "engines": {
     "node": "^14.18 || >= 16.0.0"
   },
   "dependencies": {
-    "@vueuse/core": "^11.0.3",
+    "@vueuse/core": "^12.4.0",
     "defu": "^6.1.4",
     "lite-youtube-embed": "^0.3.3",
-    "pinia": "^2.2.2",
-    "vee-validate": "^4.13.2",
-    "vuetify": "^3.7.1"
+    "ofetch": "^1.4.1",
+    "pinia": "^2.3.0",
+    "vee-validate": "^4.15.0",
+    "vuetify": "^3.7.6"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.245",
+    "@iconify/json": "^2.2.294",
     "@islands/prism": "^0.8.0",
-    "@nuxt/eslint-config": "^0.5.6",
-    "@pinegrow/iles-module": "^3.0.68",
+    "@nuxt/eslint-config": "^0.7.5",
+    "@pinegrow/iles-module": "^3.0.69",
     "@pinegrow/vuetify-plugin": "^3.0.54",
-    "@preact/preset-vite": "^2.9.0",
-    "@sveltejs/vite-plugin-svelte": "^3.1.2",
-    "@types/node": "^22.5.4",
-    "@unhead/schema-org": "^1.11.15",
-    "@unocss/preset-icons": "^0.62.3",
-    "@vue/devtools": "^6.6.3",
+    "@preact/preset-vite": "^2.9.4",
+    "@sveltejs/vite-plugin-svelte": "^4.0.4",
+    "@types/node": "^22.10.6",
+    "@unhead/schema-org": "^1.11.16",
+    "@unocss/preset-icons": "^65.4.0",
     "autoprefixer": "^10.4.20",
-    "eslint": "^8.57.1",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
     "iles": "^0.10.0-beta.1",
     "npm-run-all": "^4.1.5",
-    "ofetch": "^1.3.4",
-    "postcss": "^8.4.45",
-    "preact": "^10.23.2",
-    "preact-render-to-string": "^6.5.10",
-    "prettier": "^3.3.3",
+    "postcss": "^8.5.0",
+    "preact": "^10.25.4",
+    "preact-render-to-string": "^6.5.13",
+    "prettier": "^3.4.2",
     "rehype-external-links": "^3.0.0",
-    "rollup-plugin-visualizer": "^5.12.0",
+    "rollup-plugin-visualizer": "^5.14.0",
     "sass": "^1.78.0",
-    "solid-js": "^1.8.22",
-    "svelte": "^4.2.19",
-    "typescript": "^5.5",
-    "unocss": "^0.62.3",
-    "unplugin-auto-import": "^0.18.2",
-    "vite-plugin-vue-devtools": "^7.4.4",
+    "solid-js": "^1.9.4",
+    "svelte": "^5.17.4",
+    "typescript": "^5.7",
+    "unocss": "^65.4.0",
+    "unplugin-auto-import": "^19.0.0",
+    "vite-plugin-vue-devtools": "^7.7.0",
     "vite-plugin-vuetify": "^2.0.4",
-    "vue-tsc": "^2.1"
+    "vue-tsc": "^2.2"
+  },
+  "overrides": {
+    "@sveltejs/vite-plugin-svelte": "^4.0.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "@sveltejs/vite-plugin-svelte": "^4.0.4"
+    }
   },
   "web-types": "web-types.json"
 }

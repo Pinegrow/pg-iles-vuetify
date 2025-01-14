@@ -9,6 +9,8 @@ export default {
   author: 'Pinegrow',
   url: 'https://pg-iles-vuetify.netlify.app',
   github: 'https://github.com/pinegrow/pg-iles-vuetify',
+  ogImageUrl: 'og-image.jpg', // absolute url (or) from public folder
+  generator: 'https://vuedesigner.com',
   defaultLocale: 'en', // default
   identity: {
     type: 'Organization',
