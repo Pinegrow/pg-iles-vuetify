@@ -1,1 +1,115 @@
-{"files":{"src/pages/index.vue":{"frameworks":["@vue/devtools","pg.insight.events","pg.vue.tree.painter","vite-plugin-vue-devtools","pg.css.grid","project","pg.image.overlay","pg.code-validator","pg.project.items","@unocss/preset-icons","pg.asset.manager","@islands/pages","app_designer","iles","@pinegrow/iles-module","vue","unplugin-vue-components","unplugin-auto-import","tw.flowbite","vuetify","pg.html","pine.cone.lib"]},"src/layouts/default.vue":{"frameworks":["@vue/devtools","pg.insight.events","pg.vue.tree.painter","vite-plugin-vue-devtools","pg.css.grid","pg.image.overlay","@unocss/preset-icons","project","pg.code-validator","pg.project.items","@islands/pages","pg.asset.manager","app_designer","vue","unplugin-auto-import","iles","@pinegrow/iles-module","unplugin-vue-components","tw.flowbite","vuetify","pg.html"]},"src/components/SampleCard.vue":{"frameworks":["@vue/devtools","vite-plugin-vue-devtools","@unocss/preset-icons","@islands/pages","unplugin-auto-import","unplugin-vue-components","@pinegrow/iles-module","iles","vue","app_designer","project","pg.insight.events","pg.vue.tree.painter","pg.css.grid","pg.image.overlay","pg.code-validator","pg.project.items","pg.asset.manager","vuetify","tw.flowbite","pg.html","pine.cone.lib"]}},"template_framework_id":"vue","open-pages":["src/pages/index.vue","src/components/SampleCard.vue"],"breakpoints":["600px","960px","1280px","1920px","2560px"],"frameworks":["@vue/devtools","vite-plugin-vue-devtools","@unocss/preset-icons","@islands/pages","unplugin-auto-import","unplugin-vue-components","@pinegrow/iles-module","iles","vue","app_designer","project","pg.insight.events","pg.vue.tree.painter","pg.css.grid","pg.image.overlay","pg.code-validator","pg.project.items","pg.asset.manager","vuetify","tw.flowbite","pg.html","pine.cone.lib"],"urls":{"src/pages/index.vue":{"open-page-views":[{"w":1024,"h":0}]},"src/layouts/default.vue":{"open-page-views":[{"w":1024,"h":0}]},"src/components/SampleCard.vue":{"open-page-views":[{"w":1024,"h":0}]}}}
+{
+  "files": {
+    "src/pages/index.vue": {
+      "frameworks": [
+        "@vue/devtools",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "vite-plugin-vue-devtools",
+        "pg.css.grid",
+        "project",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "@unocss/preset-icons",
+        "pg.asset.manager",
+        "@islands/pages",
+        "app_designer",
+        "iles",
+        "@pinegrow/iles-module",
+        "vue",
+        "unplugin-vue-components",
+        "unplugin-auto-import",
+        "tw.flowbite",
+        "vuetify",
+        "pg.html",
+        "pine.cone.lib"
+      ]
+    },
+    "src/layouts/default.vue": {
+      "frameworks": [
+        "@vue/devtools",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "vite-plugin-vue-devtools",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "@unocss/preset-icons",
+        "project",
+        "pg.code-validator",
+        "pg.project.items",
+        "@islands/pages",
+        "pg.asset.manager",
+        "app_designer",
+        "vue",
+        "unplugin-auto-import",
+        "iles",
+        "@pinegrow/iles-module",
+        "unplugin-vue-components",
+        "tw.flowbite",
+        "vuetify",
+        "pg.html"
+      ]
+    },
+    "src/components/SampleCard.vue": {
+      "frameworks": [
+        "@vue/devtools",
+        "vite-plugin-vue-devtools",
+        "@unocss/preset-icons",
+        "@islands/pages",
+        "unplugin-auto-import",
+        "unplugin-vue-components",
+        "@pinegrow/iles-module",
+        "iles",
+        "vue",
+        "app_designer",
+        "project",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "vuetify",
+        "tw.flowbite",
+        "pg.html",
+        "pine.cone.lib"
+      ]
+    }
+  },
+  "template_framework_id": "vue",
+  "open-pages": ["src/pages/index.vue", "src/components/SampleCard.vue"],
+  "breakpoints": ["600px", "960px", "1280px", "1920px", "2560px"],
+  "frameworks": [
+    "@vue/devtools",
+    "vite-plugin-vue-devtools",
+    "@unocss/preset-icons",
+    "@islands/pages",
+    "unplugin-auto-import",
+    "unplugin-vue-components",
+    "@pinegrow/iles-module",
+    "iles",
+    "vue",
+    "app_designer",
+    "project",
+    "pg.insight.events",
+    "pg.vue.tree.painter",
+    "pg.css.grid",
+    "pg.image.overlay",
+    "pg.code-validator",
+    "pg.project.items",
+    "pg.asset.manager",
+    "vuetify",
+    "tw.flowbite",
+    "pg.html",
+    "pine.cone.lib"
+  ],
+  "urls": {
+    "src/pages/index.vue": { "open-page-views": [{ "w": 1024, "h": 0 }] },
+    "src/layouts/default.vue": { "open-page-views": [{ "w": 1024, "h": 0 }] },
+    "src/components/SampleCard.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    }
+  }
+}
