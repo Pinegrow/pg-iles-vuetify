@@ -14,8 +14,8 @@ import { unheadVueComposablesImports } from '@unhead/vue'
 
 import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
-import site from './src/site'
-const { url: siteUrl } = site
+import siteMeta from './src/site'
+const { url: siteUrl } = siteMeta
 
 export default defineConfig({
   siteUrl,
